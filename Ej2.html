@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .box { text-align: center; }
+    .header, .footer { background-color: #3498db; }
+    .box-1, .box-2, .box-3, .box-4 { background-color: #6cace4; }
+    .box-a, .box-b, .box-c, .box-d { background-color: #95d7ee; }
+    .desktop { background-color: #f39c12; }
+    .mobile { background-color: #f39c12; }
+    .tablet { background-color: #f39c12; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 header box">
+        Header
+      </div>
+    </div>
+    
+    <div class="d-none d-md-block">
+        <div class="row">
+          <div class="col-md-3 offset-md-3 box-1 box">
+            1
+          </div>
+          <div class="col-md-3 box-2 box">
+            2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 box-3 box">
+            3
+          </div>
+          <div class="col-md-3 box-4 box  offset-md-6">
+            4
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 order-md-4 box-a box">
+            a
+          </div>
+          <div class="col-md-3 order-md-3 box-b box">
+            b
+          </div>
+          <div class="col-md-3 order-md-2 box-c box">
+            c
+          </div>
+          <div class="col-md-3 order-md-1 box-d box">
+            d
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 desktop box">
+            Desktop
+          </div>
+        </div>
+      </div>
+    
+    <div class="d-none d-sm-block d-md-none">
+      <div class="row">
+        <div class="col-sm-3 box-1 box">
+          1
+        </div>
+        <div class="col-sm-3 box-2 box">
+          2
+        </div>
+        <div class="col-sm-3 box-3 box">
+          3
+        </div>
+        <div class="col-sm-3 box-4 box">
+          4
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 box-a box">
+          a
+        </div>
+        <div class="col-sm-3 box-b box">
+          b
+        </div>
+        <div class="col-sm-3 box-c box">
+          c
+        </div>
+        <div class="col-sm-3 box-d box">
+          d
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 tablet box">
+          :D
+        </div>
+        <div class="col-sm-6 tablet box">
+          :(
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="d-sm-none">
+      <div class="row">
+        <div class="col-6 box-1 box">
+          1
+        </div>
+        <div class="col-6 box-2 box">
+          2
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 box-3 box">
+          3
+        </div>
+        <div class="col-6 box-4 box">
+          4
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 box-a box">
+          a
+        </div>
+        <div class="col-6 box-b box">
+          b
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 box-c box">
+          c
+        </div>
+        <div class="col-6 box-d box">
+          d
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mobile box">
+          Mobile
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 footer box">
+        Footer
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
